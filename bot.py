@@ -20,7 +20,7 @@ class Bot(Client):
         )
         self.LOGGER = LOGGER
 
-    async def start(self):
+    sync def start(self):
         await super().start()
         usr_bot_me = await self.get_me()
 
