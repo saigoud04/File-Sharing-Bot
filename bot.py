@@ -50,5 +50,5 @@ class Bot(Client):
         self.username = usr_bot_me.username
 
     async def stop(self, *args):
-        await super().stop()
+        await super().start()
         self.LOGGER(__name__).info("Bot stopped.")
